@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -19,7 +18,6 @@ production:
   database: chess_production
   #username: chess
   #password: <%= ENV['CHESS_DATABASE_PASSWORD'] %>
-=======
 # PostgreSQL. Versions 9.1 and up are supported.
 #
 # Install the pg driver:
@@ -42,6 +40,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: localhost
 
 development:
   <<: *default
@@ -103,6 +104,5 @@ test:
 production:
   <<: *default
   database: utor_apr15_team_production
-  username: utor_apr15_team
-  password: <%= ENV['UTOR_APR15_TEAM_DATABASE_PASSWORD'] %>
->>>>>>> 31d1e652d6eec268bddea3719464583d60a0a32e
+  # username: utor_apr15_team
+  # password: <%= ENV['UTOR_APR15_TEAM_DATABASE_PASSWORD'] %>

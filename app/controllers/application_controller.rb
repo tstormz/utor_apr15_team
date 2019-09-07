@@ -1,8 +1,13 @@
 class ApplicationController < ActionController::Base
-<<<<<<< HEAD
+before_action :configure_permitted_parameters, if: :devise_controller?
+
   def after_sign_in_path_for(resource)
     lobby_path
   end
-=======
->>>>>>> 31d1e652d6eec268bddea3719464583d60a0a32e
+
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:email, :username])
+  end
 end
