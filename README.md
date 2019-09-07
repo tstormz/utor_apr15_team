@@ -1,8 +1,5 @@
 # README
 
-<<<<<<< HEAD
-A chess application using Ruby on Rails and ActionCable websockets
-=======
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -25,4 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
->>>>>>> 31d1e652d6eec268bddea3719464583d60a0a32e
