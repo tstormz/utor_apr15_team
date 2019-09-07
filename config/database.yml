@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: db
+
+development:
+  <<: *default
+  database: chess_development
+test:
+  <<: *default
+  database: chess_test
+
+production:
+  <<: *default
+  database: chess_production
+  #username: chess
+  #password: <%= ENV['CHESS_DATABASE_PASSWORD'] %>
+=======
 # PostgreSQL. Versions 9.1 and up are supported.
 #
 # Install the pg driver:
@@ -83,3 +105,4 @@ production:
   database: utor_apr15_team_production
   username: utor_apr15_team
   password: <%= ENV['UTOR_APR15_TEAM_DATABASE_PASSWORD'] %>
+>>>>>>> 31d1e652d6eec268bddea3719464583d60a0a32e
