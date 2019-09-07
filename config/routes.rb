@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :players
+  root "static_pages#index"
+  get "about", to: "static_pages#about"
+  get "lobby", to: "sessions#lobby"
+  resources :sessions, only: [:new, :create]
 end
