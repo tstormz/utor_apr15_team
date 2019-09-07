@@ -25,3 +25,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore DOcker Files
+/entrypoint.sh
+/Dockerfile
+/docker-compose.yml
