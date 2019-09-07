@@ -1,13 +1,9 @@
 Rails.application.configure do
-<<<<<<< HEAD
-  config.action_mailer.default_url_options = { host: "localhost:3000" }
-=======
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
->>>>>>> 31d1e652d6eec268bddea3719464583d60a0a32e
   config.cache_classes = false
 
   # Do not eager load code on boot.
@@ -18,20 +14,12 @@ Rails.application.configure do
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
-<<<<<<< HEAD
-  if Rails.root.join("tmp", "caching-dev.txt").exist?
-=======
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
->>>>>>> 31d1e652d6eec268bddea3719464583d60a0a32e
     config.action_controller.perform_caching = true
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
-<<<<<<< HEAD
-      "Cache-Control" => "public, max-age=#{2.days.to_i}",
-=======
       'Cache-Control' => "public, max-age=#{2.days.to_i}"
->>>>>>> 31d1e652d6eec268bddea3719464583d60a0a32e
     }
   else
     config.action_controller.perform_caching = false
