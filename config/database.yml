@@ -106,3 +106,4 @@ production:
   database: utor_apr15_team_production
   # username: utor_apr15_team
   # password: <%= ENV['UTOR_APR15_TEAM_DATABASE_PASSWORD'] %>
+  # password: <%= ENV['CHESS_DATABASE_PASSWORD'] %>

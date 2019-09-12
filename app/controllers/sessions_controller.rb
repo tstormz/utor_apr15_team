@@ -1,16 +1,14 @@
 class SessionsController < ApplicationController
   before_action :authenticate_player!
 
-  def new
+  def lobby
+    @sessions = Session.all
     @session = Session.new
   end
 
   def create
     Session.create(session_params)
     redirect_to lobby_path
-  end
-
-  def show
   end
 
   private
