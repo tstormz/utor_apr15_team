@@ -78,3 +78,5 @@ gem 'simple_form'
 #devise
 gem 'devise'
 
+gem 'redis'
+
