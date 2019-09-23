@@ -17,6 +17,7 @@
         <li class="nav-item active">
           <% if player_signed_in? %>
             <li class="nav-item">
+              <h4><font color="#1F95DE"><%= current_player.username %></font></h4>
               <%= link_to 'Sign out', destroy_player_session_path, method: :delete, class: 'nav-link' %>
             </li>
           <% else %>
@@ -40,6 +41,14 @@
   <% if alert.present? %>
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
+
+    <title>UtorApr15Team</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
   <body>
     <%= yield %>

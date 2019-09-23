@@ -60,15 +60,15 @@ GEM
       sassc-rails (>= 2.0.0)
     builder (3.2.3)
     byebug (11.0.1)
-    capybara (3.15.1)
+    capybara (3.29.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
-      regexp_parser (~> 1.2)
+      regexp_parser (~> 1.5)
       xpath (~> 3.2)
-    childprocess (1.0.1)
+    childprocess (2.0.0)
       rake (< 13.0)
     chromedriver-helper (2.1.1)
       archive-zip (~> 0.10)
@@ -161,6 +161,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    redis (4.1.3)
     regexp_parser (1.6.0)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
@@ -172,8 +173,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sass-rails (5.0.7)
-      railties (>= 4.0.0, < 6)
+    sass-rails (5.1.0)
+      railties (>= 5.2.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
@@ -186,8 +187,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (3.142.3)
-      childprocess (>= 0.5, < 2.0)
+    selenium-webdriver (3.142.4)
+      childprocess (>= 0.5, < 3.0)
       rubyzip (~> 1.2, >= 1.2.2)
     simple_form (4.1.0)
       actionpack (>= 5.0)
@@ -247,6 +248,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.3)
   rails-assets-tether (>= 1.3.3)!
+  redis
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form
@@ -258,5 +260,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-  ruby 2.5.5
+   ruby 2.5.3p105
 
+BUNDLED WITH
+   2.0.2
