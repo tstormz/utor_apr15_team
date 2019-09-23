@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :authenticate_player!
+  before_action :authenticate_user!
 
   def lobby
     @sessions = Session.all
